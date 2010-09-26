@@ -49,17 +49,17 @@ public class URNTestCase {
     public void testURN() {
         {
             try {
-                URN urn = new URN("urn:smq:session=default,connection=sms,queue=vzwdrs");
-                Assert.assertEquals(urn.getNid(), "smq");
-                Assert.assertEquals(urn.getNss(), "session=default,connection=sms,queue=vzwdrs");
+                URN urn = new URN("urn:silly:blammo=default,chunky=jif,peanut=butter");
+                Assert.assertEquals(urn.getNid(), "silly");
+                Assert.assertEquals(urn.getNss(), "blammo=default,chunky=jif,peanut=butter");
             } catch (URNSyntaxException e) {
                 e.printStackTrace();
             }
         }
         {
             try {
-                URN urn1 = new URN("urn:smq:session");
-                URN urn2 = new URN("uRn:sMq:seSsion");
+                URN urn1 = new URN("urn:silly:session");
+                URN urn2 = new URN("uRn:silly:seSsion");
                 Assert.assertTrue(urn1.compareTo(urn2) == 0);
             } catch (URNSyntaxException e) {
                 Assert.fail();
