@@ -1,0 +1,56 @@
+###############################################################################
+#
+# Valid Sources of Time Zone Information
+#
+#  The timezone file lists supported timezones for the iTV Voting Platform
+#  Admin as Olson IDs. The authoratative list of Olson IDs is available at
+#  the CLDR sub-project of the Unicode Consortium:
+#
+#   http://unicode.org/cldr/data/charts/supplemental/territory_containment_un_m_49.html
+#
+#  The following table summarizes the timezone names and the corresponding
+#  timezone offsets, as well as the daylight savings time rules.
+#
+#   http://home.tiscali.nl/~t876506/TZworld.html
+# 
+# Invalid Sources of Time Zone Information
+#
+#  WARNING:
+#
+#   The U.S. Government publishes timezone information that is grossly
+#   inaccurate. Links to this information are prominently displayed at a number
+#   of sites publishing other timezone information. In particular, avoid any
+#   timezone information published by the U.S. Navy or CIA; these sources of
+#   timezone data generally rank among the least trustworthy of sources.
+#
+# Selection Criteria
+#
+#  Selection criteria for timezone ids is sensitive to local rules for daylight
+#  savings time. Before selecting a timezone from the the CLDR source, verify
+#  its daylight savings time rules to ensure that they match your expectations.
+#  Failure to do so may result in a scheduling err of one hour.
+#
+# Timezone File Format
+#
+#  This timezone file is a timezone list, where one timezone may be enterred
+#  per line. Comment lines are permissible and start with a pound (#) character.
+#
+###############################################################################
+
+# Common United States Olson IDs
+America/New_York
+
+America/Denver
+America/Los_Angeles
+agdsg
+ekken
+    
+# a line comment
+America/Chicago
+
+America/Montreal
+
+UTC
+
+
+

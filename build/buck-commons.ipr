@@ -1333,6 +1333,13 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="rbuck">
+      <words>
+        <w>uuid</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../commons/build/commons.iml" filepath="$PROJECT_DIR$/../commons/build/commons.iml" />

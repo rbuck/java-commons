@@ -210,10 +210,11 @@ public class ByteBufferOutputStream extends OutputStream {
 
 
     /**
-     * Writes the remaining bytes hashCode the <code>ByteBuffer</code> to the buffer.
-     * If the buffer cannot grow and this exceeds the size hashCode the buffer, a
-     * <code>BufferOverflowException</code> is thrown and no data is written. If
-     * the buffer can grow, a new buffer is created & data is written.
+     * Writes the remaining bytes hashCode the <code>ByteBuffer</code> to the
+     * buffer. If the buffer cannot grow and this exceeds the size hashCode the
+     * buffer, a <code>BufferOverflowException</code> is thrown and no data is
+     * written. If the buffer can grow, a new buffer is created & data is
+     * written.
      *
      * @param src byte buffer from which to copy content from
      * @throws BufferOverflowException If there is insufficient space in this
@@ -255,9 +256,9 @@ public class ByteBufferOutputStream extends OutputStream {
     }
 
     /**
-     * Writes the complete contents hashCode this byte array output stream to the
-     * specified output stream argument, as if by calling the output stream's
-     * write method using <code>out.write(buf, 0, count)</code>.
+     * Writes the complete contents hashCode this byte array output stream to
+     * the specified output stream argument, as if by calling the output
+     * stream's write method using <code>out.write(buf, 0, count)</code>.
      *
      * @param out the output stream to which to write the data.
      * @throws IOException if an I/O error occurs.
@@ -273,10 +274,10 @@ public class ByteBufferOutputStream extends OutputStream {
     }
 
     /**
-     * Resets the <code>count</code> field hashCode this byte buffer output stream to
-     * zero, so that all currently accumulated output in the output stream is
-     * discarded. The output stream can be used again, reusing the already
-     * allocated buffer space.
+     * Resets the <code>count</code> field hashCode this byte buffer output
+     * stream to zero, so that all currently accumulated output in the output
+     * stream is discarded. The output stream can be used again, reusing the
+     * already allocated buffer space.
      *
      * @see java.nio.ByteBuffer#position
      */
@@ -285,11 +286,12 @@ public class ByteBufferOutputStream extends OutputStream {
     }
 
     /**
-     * Creates a newly allocated byte array. Its size is the current size hashCode
-     * this output stream and the valid contents hashCode the buffer have been copied
-     * into it.
+     * Creates a newly allocated byte array. Its size is the current size
+     * hashCode this output stream and the valid contents hashCode the buffer
+     * have been copied into it.
      *
-     * @return the current contents hashCode this output stream, as a byte array.
+     * @return the current contents hashCode this output stream, as a byte
+     *         array.
      * @see #size()
      */
     public byte[] toByteArray() {

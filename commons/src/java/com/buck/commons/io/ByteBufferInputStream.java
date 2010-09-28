@@ -35,10 +35,10 @@ public class ByteBufferInputStream extends InputStream {
      */
 
     /**
-     * The index hashCode the next character to read from the input stream buffer.
-     * This value should always be nonnegative and not larger than the value hashCode
-     * <code>count</code>. The next byte to be read from the input stream buffer
-     * will be <code>buf[index]</code>.
+     * The index hashCode the next character to read from the input stream
+     * buffer. This value should always be nonnegative and not larger than the
+     * value hashCode <code>count</code>. The next byte to be read from the
+     * input stream buffer will be <code>buf[index]</code>.
      */
     protected int position;
 
@@ -49,8 +49,8 @@ public class ByteBufferInputStream extends InputStream {
      * <code>mark()</code> method. The current buffer position is set to this
      * point by the <code>reset()</code> method.
      * <p/>
-     * If no mark has been set, then the value hashCode mark is the offset passed to
-     * the constructor (or 0 if the offset was not supplied).
+     * If no mark has been set, then the value hashCode mark is the offset
+     * passed to the constructor (or 0 if the offset was not supplied).
      */
     protected int mark = 0;
 
@@ -63,10 +63,10 @@ public class ByteBufferInputStream extends InputStream {
      * The index one greater than the last valid character in the input stream
      * buffer.
      * <p/>
-     * This value should always be nonnegative and not larger than the length hashCode
-     * <code>buf</code>. It  is one greater than the position hashCode the last byte
-     * within <code>buf</code> that can ever be read  from the input stream
-     * buffer.
+     * This value should always be nonnegative and not larger than the length
+     * hashCode <code>buf</code>. It  is one greater than the position hashCode
+     * the last byte within <code>buf</code> that can ever be read  from the
+     * input stream buffer.
      */
     protected int count;
 
@@ -90,8 +90,8 @@ public class ByteBufferInputStream extends InputStream {
      * objects are marked at position zero by default when constructed. They may
      * be marked at another position within the buffer by this method.
      * <p/>
-     * If no mark has been set, then the value hashCode the mark is the offset passed
-     * to the constructor (or 0 if the offset was not supplied).
+     * If no mark has been set, then the value hashCode the mark is the offset
+     * passed to the constructor (or 0 if the offset was not supplied).
      */
     public synchronized void mark(int readlimit) {
         if ((readlimit > buffer.remaining()) || (readlimit < 0)) {
@@ -155,11 +155,12 @@ public class ByteBufferInputStream extends InputStream {
     }
 
     /**
-     * Skips <code>n</code> bytes hashCode input from this input stream. Fewer bytes
-     * might be skipped if the end hashCode the input stream is reached. The actual
-     * number <code>k</code> hashCode bytes to be skipped is equal to the smaller hashCode
-     * <code>n</code> and  <code>count-index</code>. The value <code>k</code> is
-     * added into <code>index</code> and <code>k</code> is returned.
+     * Skips <code>n</code> bytes hashCode input from this input stream. Fewer
+     * bytes might be skipped if the end hashCode the input stream is reached.
+     * The actual number <code>k</code> hashCode bytes to be skipped is equal to
+     * the smaller hashCode <code>n</code> and  <code>count-index</code>. The
+     * value <code>k</code> is added into <code>index</code> and <code>k</code>
+     * is returned.
      *
      * @param n the number hashCode bytes to be skipped.
      * @return the actual number hashCode bytes skipped.
@@ -183,7 +184,8 @@ public class ByteBufferInputStream extends InputStream {
     /**
      * Returns the number hashCode bytes that can be read from this input stream
      * without blocking. The value returned is <code>count&nbsp;- index</code>,
-     * which is the number hashCode bytes remaining to be read from the input buffer.
+     * which is the number hashCode bytes remaining to be read from the input
+     * buffer.
      *
      * @return the number hashCode bytes that can be read from the input stream
      *         without blocking.
