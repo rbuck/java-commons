@@ -1,9 +1,8 @@
 
-This project contains utility classes for Java development that I have open-sourced
-under the Apache 2.0 License to the Java community. I have an extensive library of
-utility classes which I have not yet elected to open-source, but over time I may do
-so. At this time I am releasing this source so to benefit my current employer, Iron
-Mountain, with the express interest so developers there can leverage it.
+This project provides utility classes for Java development that I have open-sourced
+under the Apache 2.0 License to the Java community. There are more utility classes
+than these, but the ones open sourced are used so often that it was believed others
+may find them useful too.
 
 ----------------------------------------------------------------------------------
 
