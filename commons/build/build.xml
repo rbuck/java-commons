@@ -18,7 +18,7 @@
 <project name="commons" default="dist" basedir="."
          xmlns:buildflex="http://www.buildflex.com/ant/buildflex">
 
-  <description>buildflex build file</description>
+  <description>commons build file</description>
 
   <!--
     Imports

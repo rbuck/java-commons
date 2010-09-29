@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ivy-module version="1.0">
-  <info organisation="buildflex" module="sample"/>
+  <info organisation="buck" module="java-commons"/>
   <configurations>
     <conf name="default"/>
   </configurations>
