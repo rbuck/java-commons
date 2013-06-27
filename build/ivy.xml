@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<ivy-module version="1.0">
-  <info organisation="buck" module="java-commons"/>
-  <configurations>
-    <conf name="default"/>
-  </configurations>
-  <publications/>
-  <dependencies/>
-</ivy-module>
