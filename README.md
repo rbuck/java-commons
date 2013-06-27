@@ -24,7 +24,8 @@ To compile and test the project issue the following commands:
 
 To release the project issue the following commands:
 
-    mvn clean release:prepare -Dgpg.passphrase= -Dgpg.keyname=
+    mvn release:clean
+    mvn release:prepare -Dgpg.passphrase= -Dgpg.keyname=
     mvn release:perform
 
 # License
