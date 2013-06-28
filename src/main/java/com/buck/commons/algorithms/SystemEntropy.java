@@ -73,17 +73,17 @@ public final class SystemEntropy {
                     Enumeration e = p.propertyNames();
                     while (e.hasMoreElements()) {
                         s = (String) e.nextElement();
-                        md.update(s.getBytes());
-                        md.update(p.getProperty(s).getBytes());
+                        md.update(s.getBytes("UTF-8"));
+                        md.update(p.getProperty(s).getBytes("UTF-8"));
                     }
 
-                    md.update(InetAddress.getLocalHost().toString().getBytes());
+                    md.update(InetAddress.getLocalHost().toString().getBytes("UTF-8"));
 
                     // The temporary dir
                     File f = new File(p.getProperty("java.io.tmpdir"));
                     String[] sa = f.list();
                     for (String aSa : sa) {
-                        md.update(aSa.getBytes());
+                        md.update(aSa.getBytes("UTF-8"));
                     }
 
                 } catch (Exception ex) {

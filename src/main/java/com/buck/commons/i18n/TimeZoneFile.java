@@ -162,31 +162,35 @@ public class TimeZoneFile {
         }
         // enforce no duplicates
         TreeSet<String> validTimeZones = new TreeSet<String>();
-        BufferedReader br = new BufferedReader(new InputStreamReader(tzInputStream));
         try {
-            String line;
-            do {
-                line = br.readLine();
-                if (line != null) {
-                    line = line.trim();
-                    if (line.length() == 0 || '#' == line.charAt(0)) {
-                        // comment or blank line
-                        continue;
-                    }
-                    if (isTimeZoneWellFormed(line)) {
-                        validTimeZones.add(line);
-                    }
-                }
-            } while (line != null);
-        } catch (IOException ioe) {
-            // Parse error, not a proper timezone file.
-            return null;
-        } finally {
+            BufferedReader br = new BufferedReader(new InputStreamReader(tzInputStream, "US-ASCII"));
             try {
-                br.close();
+                String line;
+                do {
+                    line = br.readLine();
+                    if (line != null) {
+                        line = line.trim();
+                        if (line.length() == 0 || '#' == line.charAt(0)) {
+                            // comment or blank line
+                            continue;
+                        }
+                        if (isTimeZoneWellFormed(line)) {
+                            validTimeZones.add(line);
+                        }
+                    }
+                } while (line != null);
             } catch (IOException ioe) {
-                // Error while close, nothing we can do.
+                // Parse error, not a proper timezone file.
+                return null;
+            } finally {
+                try {
+                    br.close();
+                } catch (IOException ioe) {
+                    // Error while close, nothing we can do.
+                }
             }
+        } catch (UnsupportedEncodingException e) {
+            // impossible
         }
 
         int countTimeZones = validTimeZones.size();
