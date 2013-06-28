@@ -34,7 +34,7 @@
     </licenses>
     <scm>
         <connection>scm:git:git://github.com/rbuck/java-commons.git</connection>
-        <developerConnection>scm:git:git@github.com:rbuck/java-commons.git</developerConnection>
+        <developerConnection>scm:git:git://github.com/rbuck/java-commons.git</developerConnection>
         <url>https://github.com/rbuck/java-commons</url>
     </scm>
     <developers>
