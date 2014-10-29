@@ -1,6 +1,8 @@
 Java Commons
 ============
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.rbuck/java-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.rbuck/java-commons)
+
 [<img src="https://api.travis-ci.org/rbuck/java-commons.png?branch=master" alt="Build Status" />](http://travis-ci.org/rbuck/java-commons)
 
 # Description
